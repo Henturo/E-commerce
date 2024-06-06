@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="Shortcut icon" type="x icon" href="Untitled design.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Gear</title>
+
+    <link rel="stylesheet" href="Step2.css">
+    <!--boxicons-->
+    
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--remix icons-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="logo">
+            <i class="ri-run-line"></i> Fitness Gear
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products, categories or shop" id="search-input">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+        <div class="user-menu">
+            <a href="#">Help & Contact</a>
+            <a href="#" id="login-btn">Log in <i class="ri-user-line"></i></a>
+            <a href="#" id="cart-btn" onclick="toggleCartPanel()">Cart <i class="ri-shopping-cart-2-line"></i><span id="cart-count">0</span></a>
+        </div>
+    </header>
+
+    <!--Banner-->
+    <section class="banner">
+
+      
+    </section>
+
+    <!--Tabs-->
+    <div class="tabs">
+        <div class="tab" id="to-pay-tab">To Pay <i class="ri-bank-card-line"></i></div>
+        <div class="tab" id="to-deliver-tab">To Deliver <i class="ri-truck-line"></i></div>
+        <div class="tab" id="to-receive-tab">To Receive <i class="ri-dropbox-line"></i></div>
+    </div>
+
+    <!--Product Grid-->
+    <section class="products">
+        <h2>All Product</h2>
+        <div class="product-grid" id="product-grid">
+            <!-- Product items will be control here by JavaScript -->
+        </div>
+    </section>
+
+    <!--See more-->
+    <div class="see-more">
+        <div class="see" id="see more">See More</div>
+    </div>
+
+    <footer>
+        <div class="company-info">
+            <h3>COMPANY INFO</h3>
+            <ul>
+                <li><a href="#">About FitGear</a></li>
+                <li><a href="#">Gym Blogger</a></li>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">#beFitNotFat</a></li>
+            </ul>
+        </div>
+        <div class="help-support">
+            <h3>HELP & SUPPORT</h3>
+            <ul>
+                <li><a href="#">Shipping Info</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Refund</a></li>
+                <li><a href="#">How To Order</a></li>
+                <li><a href="#">How To Track</a></li>
+            </ul>
+        </div>
+        <div class="customer-care">
+            <h3>CUSTOMER CARE</h3>
+            <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Payment Method</a></li>
+                <li><a href="#">Bonus Point</a></li>
+                <li><a href="#">FitGear VIP</a></li>
+            </ul>
+        </div>
+        <div class="find-us">
+            <h3>FIND US ON</h3>
+            <ul>
+                <li><i class="ri-facebook-circle-fill"></i> <i class="ri-instagram-line"></i> <i class="ri-whatsapp-line"></i></li>
+                
+                
+                <li>
+                    <form action="#">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email">
+                        <button type="submit"></button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Cart Panel -->
+    <div class="cart-panel" id="cart-panel">
+        <button class="close-cart" onclick="toggleCartPanel()">Back</button>
+        <h2>Cart</h2>
+        <div id="cart-items">
+            <!-- Cart items JavaScript -->
+        </div>
+    </div>
+
+      <script src="Step3.js"></script>
+</body>
+</html>
